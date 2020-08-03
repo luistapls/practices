@@ -1,4 +1,5 @@
-var posibilidadBisiesto = year => year % 4 === 0 ? year % 100 === 0 ? year % 400 === 0 ? true : false: true : false;
+let posibilidadBisiesto = years => years % 4 === 0 && years % 100 !== 0  || years % 400 === 0
+// var posibilidadBisiesto = year => year % 4 === 0 ? year % 100 === 0 ? year % 400 === 0 ? true : false: true : false;
 var c1 = 0;
 var fechaSum = new Date (prompt("Indique una fecha (YY/MM/DD)."));
 while(!posibilidadBisiesto(fechaSum.getFullYear() + c1)) {
