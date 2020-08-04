@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Esta funcion da un true si el a;o suministrado es bisiesto. */
 const posibilidadBisiesto = year => year % 4 === 0 && year % 100 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 === 0;
 
@@ -33,6 +34,14 @@ const siAñoEsBisiesto = () => {
 
     /* Si el resultado es negativo significa que ya paso el 29 de febrero. El proximo es dentro de 4 a;os. */
     añoFechaSuministrada + 4;
+=======
+let posibilidadBisiesto = years => years % 4 === 0 && years % 100 !== 0  || years % 400 === 0
+// var posibilidadBisiesto = year => year % 4 === 0 ? year % 100 === 0 ? year % 400 === 0 ? true : false: true : false;
+var c1 = 0;
+var fechaSum = new Date (prompt("Indique una fecha (YY/MM/DD)."));
+while(!posibilidadBisiesto(fechaSum.getFullYear() + c1)) {
+    c1++;
+>>>>>>> ffe12b247f8200e79b94be31d05338d804b0c7aa
 }
 
 const proxAñobisiesto = (añosParaBisiesto) => añosParaBisiesto === 0 ? siAñoEsBisiesto() : añoFechaSuministrada + añosParaBisiesto;
